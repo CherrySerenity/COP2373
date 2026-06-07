@@ -4,7 +4,7 @@ TOTAL_TICKETS = 10
 MAX_TICKETS_PER_BUYER = 4
 
 def get_ticket_request():
-    tickets_requested = int(input("How many tickets would you like to buy?"))
+    tickets = int(input("Enter the number of tickets requested. I've heard it both ways. "))
     return tickets_requested
 
 def process_purchase(tickets_remaining, tickets_requested):

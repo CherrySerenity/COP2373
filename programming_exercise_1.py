@@ -14,7 +14,7 @@ def process_purchase(tickets_remaining, tickets_requested):
 
 def main():
     tickets_remaining = TOTAL_TICKETS
-    total_buyers = 0
+    buyer_count = 0
 # keeps asking until all tickets are sold
     while tickets_remaining > 0:
         tickets_requested = get_ticket_request()
@@ -26,8 +26,8 @@ def main():
         else:
             print("Invalid purchase. You may buy 1 to 4 tickets, and no more than the remaining amount.")
 
-    print("Hey! Wait a minute...You bought all the tickets for yourself! Greedy!  .")
-    print("Total buyers:", total_buyers)
+    print("Gus, don't be exactly half of an eleven-pound Black Forest ham. Share some tickets.")
+    print("Total buyers:", buyer_count)
 
 
 main()
